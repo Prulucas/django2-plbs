@@ -1,0 +1,10 @@
+Se estiver no ubunto
+sudo app-get install libmysqlclient-dev python3-dev
+
+Se tiver no MAC
+brew install mysql-conector-c
+
+Se estiver no  Windows e tem servidor mysql instalado, provavelmente já está  instalado
+
+
+em cada api temos um arquivo forms, que criamos todos os formulários
