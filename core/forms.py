@@ -1,5 +1,6 @@
 from django import forms
 from django.core.mail.message import EmailMessage
+from .models import Product
 
 
 class ContactForm(forms.Form):
@@ -26,3 +27,11 @@ class ContactForm(forms.Form):
         mail.send()
         '''Função para enviar email, acessa os dados pela chave no cleaned_data e depois instancia o 
         objeto para o envio do email'''
+
+
+class ProductModelForm(forms.ModelForm):
+    # classe meta para metadados, classe de formulário:
+    class Meta:
+        model = Product
+        fields = ['name', 'price', 'storage', 'image']
+        # extende ModelForm, padrão para identificar a model e o form
