@@ -125,6 +125,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# media vai criar os diretorios do dados salvos em bd
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # configurações de email
 # abaixo o código para simular o envio de email, printando no console
