@@ -153,3 +153,14 @@ EMAIL_PORT = 586 (Ou a que o servidor informar)
 EMAIL_USE_TSL = True (Se vai utilizar criptografia ou não)
 EMAIL_HOST_PASSWORD = 'sua-senha'
 '''
+
+"""#!/usr/bin/env bash
+# exit on error
+set -o errexit
+
+pip install -r requirements.txt
+
+# ESTA LINHA É OBRIGATÓRIA PARA O CSS FUNCIONAR
+python manage.py collectstatic --no-input
+
+python manage.py migrate"""
