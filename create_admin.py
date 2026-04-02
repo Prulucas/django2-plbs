@@ -1,11 +1,14 @@
-# create_admin.py
 from django.contrib.auth.models import User
 import os
 import django
 
+# 1. Configura o módulo de settings PRIMEIRO
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django2.settings')
+
+# 2. Inicializa o Django
 django.setup()
 
+# 3. SÓ AGORA importa os modelos
 
 username = 'Pedro'
 email = 'plbrandsilva@email.com'
